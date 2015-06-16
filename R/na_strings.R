@@ -12,7 +12,7 @@ na_strings <- function(data_creator = c("generic", "excel", "sas", "stata", "sql
   data_creator <- match.arg(data_creator)
   switch(
     data_creator,
-    unknown = "NA",
+    generic = "NA",
     excel = c("#N/A", "#NULL!", "#NUM!", "#REF!", "#VALUE!", "#DIV/0!", "#NAME?"),
     sas = ,
     stata = ".",
